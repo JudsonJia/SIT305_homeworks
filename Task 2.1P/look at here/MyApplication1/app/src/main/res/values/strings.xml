@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application 1</string>
+    <string name="conversion_type">Conversion Type</string>
+    <string name="Task">Task 2.1</string>
+    <string name="select_source_unit_and_value">Select source unit and value</string>
+    <string name="input_hint">Value</string>
+    <string name="destination_text">Set destination unit</string>
+    <string name="convert_button">Convert</string>
+</resources>

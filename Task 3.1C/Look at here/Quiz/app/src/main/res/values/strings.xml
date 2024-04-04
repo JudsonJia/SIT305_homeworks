@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="appName">SIT305 QUIZ APP</string>
+    <string name="enter_name">Enter your name: </string>
+    <string name="enterName">name</string>
+    <string name="button_name">START</string>
+    <string name="question_title">Please answer the following questions: </string>
+    <string name="show_score">Your score: </string>
+    <string name="take_new_quiz">Take New Quiz</string>
+    <string name="finish">Finish</string>
+</resources>
