@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Task 4.1</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="due_date_yyyy_mm_dd">Due Date (YYYY-MM-DD)</string>
+    <string name="save">Save</string>
+    <string name="welcome_to_task_manager">Welcome to Task manager!</string>
+    <string name="task_4_1">TASK 4.1</string>
+    <string name="task_list">Task List</string>
+    <string name="create_task">Create Task</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+</resources>
