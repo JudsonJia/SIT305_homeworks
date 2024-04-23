@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- news image -->
+    <ImageView
+        android:id="@+id/imageViewNews_2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/news_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_image" />
+
+    <!-- news title -->
+    <TextView
+        android:id="@+id/textViewTitle_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- news content -->
+    <TextView
+        android:id="@+id/textViewContent_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/related_stories"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- related news list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRelatedNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp">
+
+    <!-- image -->
+    <ImageView
+        android:id="@+id/imageTopStory"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/placeholder_image"
+        android:contentDescription="@string/news_image" />
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/textTopStoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageTopStory"
+        android:layout_marginTop="8dp"
+        android:text="@string/top_story_title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
