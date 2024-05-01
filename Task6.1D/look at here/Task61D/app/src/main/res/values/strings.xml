@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Quiz</string>
+
+    <string name="enter_name">Enter your name: </string>
+    <string name="enterName">name</string>
+    <string name="button_login">Login</string>
+    <string name="question_title">Please answer the following questions: </string>
+    <string name="show_score">Your score: </string>
+    <string name="take_new_quiz">Take New Quiz</string>
+    <string name="finish">Finish</string>
+    <string name="welcome">Welcome,</string>
+    <string name="student">Student!</string>
+    <string name="let_s_start_learning">Let\'s Start Learning!</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="need_an_account">Need an Account?</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="confirm_email">confirm email</string>
+    <string name="email">email</string>
+    <string name="create_new_account">Create new Account</string>
+    <string name="lets_get_you">Lets get you</string>
+    <string name="set_up">Set up!</string>
+    <string name="your">Your</string>
+    <string name="interests">Interests</string>
+    <string name="you_may_select_upto_10_topics">You may select upto 10 topics</string>
+    <string name="technology">Technology</string>
+    <string name="sports">Sports</string>
+    <string name="music">Music</string>
+    <string name="art">Art</string>
+    <string name="algorithms">Algorithms</string>
+    <string name="data_structure">Data Structure</string>
+    <string name="web_development">Web Development</string>
+    <string name="testing">Testing</string>
+    <string name="ai">AI</string>
+    <string name="next">Next</string>
+    <string name="image">image</string>
+    <string name="generated_task1">Generated Task1</string>
+    <string name="you_have_one_task_due">You have one task due</string>
+    <string name="Continue">Continue</string>
+    <string name="your_result">Your Results:</string>
+</resources>

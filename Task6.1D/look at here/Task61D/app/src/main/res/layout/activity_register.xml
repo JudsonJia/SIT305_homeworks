@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/registerTitle_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/lets_get_you"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerTitle_one"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="@string/set_up" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/round_corners_bg"
+        android:paddingStart="10dp"
+        android:hint="@string/username"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/round_corners_bg"
+        android:paddingStart="10dp"
+        android:hint="@string/email"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/confirmEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/round_corners_bg"
+        android:paddingStart="10dp"
+        android:hint="@string/confirm_email"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/round_corners_bg"
+        android:paddingStart="10dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_below="@id/confirmEmailEditText"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/round_corners_bg"
+        android:paddingStart="10dp"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_new_account"
+        android:layout_below="@id/confirmPasswordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
