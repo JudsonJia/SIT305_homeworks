@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Lost&amp;Found APP with Geo features</string>
+    <string name="remove">REMOVE</string>
+    <string name="location">Location</string>
+    <string name="save">SAVE</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+    <string name="name">Name</string>
+    <string name="create_a_new_advert">Create a new advert</string>
+    <string name="show_all_lost_and_found_items">Show all lost and found items</string>
+    <string name="lost_amp_found_items"><![CDATA[LOST & FOUND ITEMS]]></string>
+    <string name="lost">Lost</string>
+    <string name="found">Found</string>
+    <string name="post_type">Post type:</string>
+    <string name="show_on_map">Show on Map</string>
+    <string name="get_current_location">GET CURRENT LOCATION</string>
+
+</resources>
