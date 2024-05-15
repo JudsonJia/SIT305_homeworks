@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EditTextStyle">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@drawable/boder_style</item>
+    </style>
+    <style name="ButtonStyle">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:radius">3dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:backgroundTint">#5AB350</item>
+    </style>
+    <style name="InputTextStyle">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@drawable/input_border_style</item>
+    </style>
+    <style name="radius">
+        <item name="android:radius">5dp</item>
+    </style>
+    <style name="textviewBackground">
+
+    </style>
+</resources>

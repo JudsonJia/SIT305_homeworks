@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AIChat</string>
+    <string name="go">Go</string>
+    <string name="type_your_message">Type your message</string>
+    <string name="send_image">Send_image</string>
+    <string name="username">Username</string>
+    <string name="let_s_chat">Let\'s Chat!</string>
+    <string name="welcome">Welcome,</string>
+</resources>
