@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/background_color"
     android:orientation="vertical">
 
     <TextView
@@ -11,27 +11,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:paddingStart="50dp"
+        android:layout_marginStart="50dp"
         android:text="@string/welcome"
-        android:textSize="25sp"
-        tools:ignore="RtlSymmetry" />
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <TextView
         style="@style/myAppName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="50dp"
-        android:text="@string/student"
-        tools:ignore="RtlSymmetry" />
+        android:textStyle="bold"
+        android:layout_marginStart="50dp"
+        android:textSize="45sp"
+        android:text="@string/student" />
 
     <TextView
         style="@style/myAppName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="50dp"
+        android:textStyle="bold"
+        android:layout_marginStart="50dp"
         android:text="@string/let_s_start_learning"
-        android:textSize="18sp"
-        tools:ignore="RtlSymmetry" />
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,9 +43,9 @@
             android:id="@+id/userName"
             style="@style/content_font"
             android:layout_width="300dp"
-            android:layout_height="30dp"
+            android:layout_height="35dp"
             android:layout_gravity="center"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="100dp"
             android:background="@drawable/round_corners_bg"
             android:hint="@string/username"
             android:importantForAutofill="no"
@@ -58,9 +59,9 @@
             android:id="@+id/password"
             style="@style/content_font"
             android:layout_width="300dp"
-            android:layout_height="30dp"
+            android:layout_height="35dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:paddingStart="10dp"
             android:background="@drawable/round_corners_bg"
             android:hint="@string/password"
@@ -75,7 +76,10 @@
         android:id="@+id/buttonLogin"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
         android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:layout_marginTop="30dp"
         android:text="@string/button_login" />
 
@@ -84,6 +88,7 @@
         style="@style/myAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#00000000"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/white"
         android:layout_gravity="center"

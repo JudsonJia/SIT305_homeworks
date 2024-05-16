@@ -123,13 +123,13 @@ public class Quiz extends AppCompatActivity {
                         TextView question3 = findViewById(R.id.question_3);
                         TextView answer3 = findViewById(R.id.answer_3);
 
-                        question1.setText(questions.get(0).getQuestionText());
+                        question1.setText(String.format("Question1: %s", questions.get(0).getQuestionText()));
                         answer1.setText(String.format("Correct Answer: %s", questions.get(0).getOptions().get(questions.get(0).getCorrectOptionIndex())));
 
-                        question2.setText(questions.get(1).getQuestionText());
+                        question2.setText(String.format("Question2: %s", questions.get(1).getQuestionText()));
                         answer2.setText(String.format("Correct Answer: %s", questions.get(1).getOptions().get(questions.get(1).getCorrectOptionIndex())));
 
-                        question3.setText(questions.get(2).getQuestionText());
+                        question3.setText(String.format("Question3: %s", questions.get(2).getQuestionText()));
                         answer3.setText(String.format("Correct Answer: %s", questions.get(2).getOptions().get(questions.get(2).getCorrectOptionIndex())));
                         finish.setOnClickListener(new View.OnClickListener() {
                             @Override

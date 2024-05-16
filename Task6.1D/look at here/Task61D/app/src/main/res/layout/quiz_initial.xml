@@ -2,14 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_color"
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
-        android:paddingStart="30dp"
-        android:text="Hello,"
+        android:text="@string/hello"
+        android:textColor="@color/black"
         android:textSize="28sp"
         android:textStyle="bold" />
 
@@ -17,40 +19,59 @@
         android:id="@+id/username_required"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="30dp"
-        android:text="username"
+        android:layout_marginStart="30dp"
+        android:text="@string/username_title"
+        android:textColor="@color/black"
         android:textSize="28sp"
         android:textStyle="bold" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/title_ai"
         android:layout_marginTop="10dp"
-        android:background="@drawable/circle_text"
-        android:gravity="center"
-        android:text="@string/you_have_one_task_due" />
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/notifications" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/you_have_one_task_due"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:background="@drawable/circle_text"
+        android:background="@drawable/result_layout"
         android:orientation="vertical">
 
         <ImageView
-            android:layout_margin="5dp"
             android:layout_width="16dp"
             android:layout_height="16dp"
+            android:layout_margin="5dp"
             android:contentDescription="@string/image"
-            android:src="@drawable/star" />
+            android:src="@drawable/social_leaderboard" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:text="@string/generated_task1"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -60,12 +81,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:padding="5dp"
-            android:text="Description"
+            android:text="@string/description"
+            android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/Continue"
+            style="@style/ButtonStyle"
             android:layout_width="50dp"
             android:layout_height="35dp"
             android:layout_marginTop="10dp"
