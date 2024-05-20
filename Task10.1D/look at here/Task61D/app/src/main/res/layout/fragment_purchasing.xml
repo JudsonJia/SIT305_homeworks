@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/goBack_Upgrade"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:padding="3dp"
+            android:background="@drawable/result_layout"
+            android:contentDescription="@string/go_back"
+            android:scaleType="fitXY"
+            android:src="@drawable/go_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upgrade"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="your experience"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:background="@drawable/result_layout"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Starter"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            style="@style/content_font"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Improved Quiz generation"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/starter_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            style="@style/ButtonStyle"
+            android:text="Purchase"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"
+
+        android:background="@drawable/result_layout"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/first_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Intermediate"
+            android:layout_marginStart="10dp"
+            style="@style/content_font"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/first_right"
+            android:layout_toEndOf="@+id/first_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best Seller"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/title_ai"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/second"
+            android:layout_below="@+id/first_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Improved Quiz generation"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <Button
+            android:layout_below="@+id/second"
+            android:id="@+id/intermediate_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            style="@style/ButtonStyle"
+            android:text="Purchase"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/result_layout"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Advanced"
+            android:layout_marginStart="10dp"
+            style="@style/content_font"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Improved Quiz generation"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/advanced_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            style="@style/ButtonStyle"
+            android:text="Purchase"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

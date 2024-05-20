@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/goBack_MyAccount"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/result_layout"
+        android:contentDescription="@string/go_back"
+        android:padding="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/go_back" />
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/result_layout"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/username"
+            style="@style/content_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/username"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/email_display"
+            style="@style/content_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:padding="5dp"
+            android:text="Email here"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/image_person_add"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/username"
+            android:layout_toRightOf="@+id/email_display"
+            android:background="@drawable/round_border_blue"
+            android:contentDescription="@string/person_image"
+            android:padding="2dp"
+            android:src="@drawable/person" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/title_ai"
+        android:elevation="25dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/image_ai"
+            android:src="@drawable/social_leaderboard" />
+
+
+        <TextView
+            style="@style/content_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:padding="5dp"
+            android:text="@string/display_any_important_notifications_here"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/result_layout"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/content_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Total"
+                android:textSize="18sp" />
+
+            <TextView
+                style="@style/content_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Questions"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/total_history"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/result_layout"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/result_layout"
+                    android:contentDescription="clickable"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/learn" />
+
+                <TextView
+                    android:id="@+id/total_number"
+                    style="@style/content_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="10"
+                    android:textSize="40sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/result_layout"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/content_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Correctly"
+                android:textSize="18sp" />
+
+            <TextView
+                style="@style/content_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Answered"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/correctly_history"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/result_layout"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/result_layout"
+                    android:contentDescription="clickable"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/learn" />
+
+                <TextView
+                    android:id="@+id/correct_number"
+                    style="@style/content_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="10"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/result_layout"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/leftSide"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/result_layout"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/content_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Incorrect"
+                android:textSize="18sp" />
+
+            <TextView
+                style="@style/content_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Answered"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/incorrect_history"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/result_layout"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/result_layout"
+                    android:contentDescription="clickable"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/learn" />
+
+                <TextView
+                    android:id="@+id/incorrect_number"
+                    style="@style/content_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="10"
+                    android:textSize="40sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rightSide"
+            android:layout_toEndOf="@+id/leftSide"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/title_ai"
+            android:elevation="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:contentDescription="@string/image_ai"
+                android:src="@drawable/social_leaderboard" />
+
+            <TextView
+                style="@style/content_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:padding="5dp"
+                android:text="Summarized by AI"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            style="@style/content_font"
+            android:layout_width="180dp"
+            android:padding="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/leftSide"
+            android:layout_below="@+id/rightSide"
+            android:text="Query the LLM to get a summary for your icorrect answers." />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/share"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/share_button_layout"
+        android:elevation="25dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/content_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:text="Share"
+            android:textColor="@color/black" />
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:contentDescription="Share"
+            android:src="@drawable/share" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/upgrade"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="Upgrade"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/share_button_layout"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>
