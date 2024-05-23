@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:padding="16dp">
+
+    <!--title here-->
+    <TextView
+        android:id="@+id/welcome_sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_sentence"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/please_input_the_language_and_topic_you_wanna_to_learn_today"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/language_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intro"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="@string/language"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/topic_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/language_input"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="@string/topic"
+        android:padding="10dp" />
+
+    <android.widget.Button
+        android:id="@+id/buttonQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topic_input"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn"
+        android:text="@string/let_s_start_your_quiz"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <android.widget.Button
+        android:id="@+id/buttonVocabulary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonQuiz"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn"
+        android:text="@string/let_s_generate_your_vocabulary"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <android.widget.Button
+        android:id="@+id/buttonReading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonVocabulary"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn"
+        android:text="@string/let_s_start_reading_comprehension"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <android.widget.Button
+        android:id="@+id/buttonWriting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonReading"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn"
+        android:text="@string/let_s_start_writing_exercise"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <android.widget.Button
+        android:id="@+id/buttonTranslation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonWriting"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn"
+        android:text="@string/tracnslation_help"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <android.widget.Button
+        android:id="@+id/buttonChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonTranslation"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn"
+        android:text="@string/let_s_chat_with_ai"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

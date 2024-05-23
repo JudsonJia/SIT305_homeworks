@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="register_button">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="content_font">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="InputTextStyle">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@drawable/edittext_bg</item>
+    </style>
+    <style name="radius">
+        <item name="android:radius">5dp</item>
+    </style>
+</resources>

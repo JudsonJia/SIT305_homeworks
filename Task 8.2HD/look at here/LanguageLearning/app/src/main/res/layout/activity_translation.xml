@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittext_bg"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:hint="Enter text to translate"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Spinner
+            android:id="@+id/source_language_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="to"/>
+
+        <Spinner
+            android:id="@+id/target_language_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/translate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:text="Translate" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Result:"/>
+
+    <TextView
+        android:id="@+id/translation_text"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittext_bg"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="16dp" />
+
+    <android.widget.Button
+        android:id="@+id/goBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:text="Go Back" />
+
+</LinearLayout>
